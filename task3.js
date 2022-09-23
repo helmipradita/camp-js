@@ -1,10 +1,13 @@
-const printSegitiga = 5
-let string = "";
+const printSegitiga = (number) => {
+    let string = "";
 
-for (let i = 1; i <= printSegitiga; i++) {
-    for (let j = 0; j < i; j++) {
-        string += i;
+    for (let i = 1; i <= number; i++) {
+        for (let j = 0; j < i; j++) {
+            string += i;
+        }
+        string += `\n`;
     }
-    string += `\n`;
+    console.log(string);
 }
-console.log(string);
+
+printSegitiga(5);
